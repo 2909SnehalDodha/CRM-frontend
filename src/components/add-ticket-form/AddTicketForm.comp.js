@@ -2,9 +2,9 @@ import React from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 import "./add-ticket-form.style.css";
-import { shortText } from '../../utils/validation';
 
-const AddTicketForm = ({ handleOnSubmit, handleOnChange, frmDt }) => {
+
+const AddTicketForm = ({ handleOnSubmit, handleOnChange,frmDataErro, frmDt }) => {
 
     console.log(frmDt);
   return (
@@ -18,12 +18,14 @@ const AddTicketForm = ({ handleOnSubmit, handleOnChange, frmDt }) => {
             <Form.Control
             name='subject'
             value={frmDt.subject}
-            minLength='3'
+            //minLength='3'
             maxLength='100'
             onChange={handleOnChange}
             placeholder='Subject'
             required
-            /></Col>
+            />
+            <Form.Text className='text-danger'>{frmDataErro.subject && "Subject is required"}</Form.Text>
+            </Col>
            </Form.Group>
            <br></br>
            <Form.Group as={Row}>
@@ -58,6 +60,7 @@ AddTicketForm.propTypes = {
     
     handleOnSubmit: PropTypes.func.isRequired,
     handleOnChange: PropTypes.func.isRequired,
+    frmDataErro: PropTypes.object.isRequired,
     frmDt: PropTypes.object.isRequired,
      
 }

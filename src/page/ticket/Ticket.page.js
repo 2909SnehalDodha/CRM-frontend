@@ -37,7 +37,7 @@ const Ticket = () => {
             </Col>
         </Row>
         <Row className='mt-4'>
-            <Col>
+            00<Col>
               <MessageHistory msg={ticket.history} />
             </Col>
         </Row>

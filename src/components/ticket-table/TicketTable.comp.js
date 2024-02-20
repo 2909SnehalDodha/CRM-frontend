@@ -19,6 +19,7 @@ const  TicketTable= ({tickets}) => {
            {tickets.length ? tickets.map((row)=>(
            <tr key={row.id}>
             <td>{row.id}</td>
+            
             <td>{row.Subject}</td>
             <td>{row.status}</td>
             <td>{row.addedAt}</td>
@@ -33,8 +34,8 @@ const  TicketTable= ({tickets}) => {
     </Table>
   );
 };
-TicketTable.PropTypes = {
-  tickets: PropTypes.array.isRequired,
+TicketTable.propTypes = {
+  tickets: propTypes.array.isRequired,
 };
 
 export default TicketTable

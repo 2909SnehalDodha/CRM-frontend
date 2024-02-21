@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
+        
         <Route
             path="/"
             element={ <DefaultLayout> 
@@ -22,7 +23,7 @@ function App() {
           </Route>
           
           <Route exact path="/" element={<Entry />} />
-          <Route exact path="/dashboard" element={<Dashboard />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/add-ticket" element={<AddTicket />} />
           <Route path="/tickets" element={<TicketLists />} />
           <Route path="/ticket/:tid" element={<Ticket />} />

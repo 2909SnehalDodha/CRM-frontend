@@ -1,25 +1,42 @@
 [
   {
     "id": 1,
-    "Subject": "ssl issue",
+    "Subject": "Email certificate expired",
     "status": "Client response pending",
-    "addedAt": "2024-02-14"  
+    "addedAt": "2024-02-14",
+    "history": [
+      {
+      "date": "24=02=17",
+      "message": "abcd",
+      "messageBy": "client"
+      },
+      {
+        "date": "24=02=17",
+        "message": "abcd",
+        "messageBy": "operator"
+        },
+        {
+          "date": "24=02=17",
+          "message": "abcd",
+          "messageBy": "client"
+          }
+    ]
   },
   {
       "id": 2,
-      "Subject": "ssl issue",
+      "Subject": "issue with email cetrificate",
       "status": "Client response pending",
       "addedAt": "2024-02-14"  
     },
     {
       "id": 3,
-      "Subject": "ssl issue",
+      "Subject": "issue app crashing",
       "status": "Client response pending",
       "addedAt": "2024-02-14"  
     },
     {
       "id": 4,
-      "Subject": "ssl issue",
+      "Subject": "issue",
       "status": "Client response pending",
       "addedAt": "2024-02-14"  
     },
